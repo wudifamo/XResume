@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    tools:context="xresume.k.com.xresume.KKeyboard">
+
+    <com.john.waveview.WaveView
+        android:id="@+id/wave_view"
+        wave:above_wave_color="#53BAFC"
+        wave:blow_wave_color="#53BAbb"
+        wave:progress="65"
+        wave:wave_height="middle"
+        wave:wave_hz="normal"
+        wave:wave_length="middle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

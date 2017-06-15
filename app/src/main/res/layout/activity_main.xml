@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xresume.k.com.xresume.views.VerticalLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/main_circle1"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-220dp"
+            android:background="@drawable/circle_main1"/>
+
+        <View
+            android:id="@+id/main_circle0"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:layout_marginLeft="-40dp"
+            android:layout_marginTop="-250dp"
+            android:background="@drawable/circle_main0"/>
+
+        <View
+            android:id="@+id/main_circle2"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-80dp"
+            android:layout_marginTop="-120dp"
+            android:background="@drawable/circle_main2"/>
+
+        <View
+            android:id="@+id/main_circle3"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="-140dp"
+            android:layout_marginTop="-50dp"
+            android:background="@drawable/circle_main3"/>
+
+        <View
+            android:id="@+id/main_circle4"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginLeft="-80dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_main4"/>
+
+
+        <View
+            android:id="@+id/main_circle5"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/circle_main5"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1080sp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1080sp">
+
+    </FrameLayout>
+
+
+</xresume.k.com.xresume.views.VerticalLinearLayout>
