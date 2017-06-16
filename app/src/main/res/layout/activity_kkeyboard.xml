@@ -1,20 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
+    android:id="@+id/kkb_mainrl"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wave="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:wave="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bluegreen"
     tools:context="xresume.k.com.xresume.KKeyboard">
 
     <com.john.waveview.WaveView
         android:id="@+id/wave_view"
-        wave:above_wave_color="#53BAFC"
-        wave:blow_wave_color="#53BAbb"
-        wave:progress="65"
-        wave:wave_height="middle"
-        wave:wave_hz="normal"
-        wave:wave_length="middle"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-</FrameLayout>
+        android:layout_height="match_parent"
+        wave:above_wave_color="#4169e1"
+        wave:blow_wave_color="#1e90ff"
+        wave:progress="80"
+        wave:wave_height="middle"
+        wave:wave_hz="fast"
+        wave:wave_length="little"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="150dp"
+        android:background="@null">
+
+        <EditText
+            android:id="@+id/kedittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Input sth"
+            android:imeActionLabel="abcde"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+    </android.support.design.widget.TextInputLayout>
+</RelativeLayout>

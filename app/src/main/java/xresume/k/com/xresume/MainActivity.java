@@ -2,9 +2,15 @@ package xresume.k.com.xresume;
 
 import android.animation.ValueAnimator;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.view.animation.LinearInterpolator;
 
 import com.github.florent37.viewanimator.ViewAnimator;
+
+import xresume.k.com.xresume.fragments.FirstFragment;
 
 
 public class MainActivity extends BaseActivity {
@@ -14,6 +20,45 @@ public class MainActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		initAnims();
+		initViewPager();
+	}
+
+	private void initViewPager(){
+		ViewPager wowo = (ViewPager)findViewById(R.id.wowo_viewpager);
+		wowo.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+			@Override
+			public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+			}
+
+			@Override
+			public void onPageSelected(int position) {
+
+			}
+
+			@Override
+			public void onPageScrollStateChanged(int state) {
+
+			}
+		});
+		wowo.setAdapter(new PagerAdapter(getSupportFragmentManager()));
+	}
+	private class PagerAdapter extends FragmentStatePagerAdapter {
+
+		PagerAdapter(FragmentManager fm) {
+			super(fm);
+		}
+
+		@Override
+		public int getCount() {
+			return 4;
+		}
+
+		@Override
+		public Fragment getItem(int position) {
+			return new FirstFragment();
+		}
+
 	}
 
 	private void initAnims() {

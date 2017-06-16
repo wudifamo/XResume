@@ -2,7 +2,6 @@ package xresume.k.com.xresume;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
@@ -14,12 +13,9 @@ import com.plattysoft.leonids.ParticleSystem;
 
 import java.util.Random;
 
-import xresume.k.com.xresume.utils.ViewUtils;
-
 public class FireWorkActivity extends BaseActivity {
 
 	private FrameLayout bubbleLayout;
-	private DisplayMetrics metrics;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +27,6 @@ public class FireWorkActivity extends BaseActivity {
 	public void onFireWork() {
 		bubbleLayout = (FrameLayout) findViewById(R.id.animation_bubble);
 		bubbleLayout.removeAllViews();
-		metrics = ViewUtils.displayMetrics(this);
 		fire();
 	}
 
@@ -39,8 +34,8 @@ public class FireWorkActivity extends BaseActivity {
 		final View view = new View(mContext);
 		view.setBackgroundColor(Color.BLACK);
 		FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(1, 20);
-		lp.topMargin = metrics.heightPixels - 80;
-		lp.leftMargin = (int) (new Random().nextDouble() * (metrics.widthPixels - 200) + 100);
+		lp.topMargin = mHeight - 80;
+		lp.leftMargin = (int) (new Random().nextDouble() * (mWidth - 200) + 100);
 		bubbleLayout.addView(view, lp);
 		ViewAnimator.animate(view)
 				.waitForHeight()
