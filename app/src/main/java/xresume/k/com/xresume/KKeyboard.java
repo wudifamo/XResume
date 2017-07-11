@@ -22,14 +22,19 @@ public class KKeyboard extends BaseActivity {
 	private int eTop, eLeft;
 
 	@Override
+	protected int setLayoutId() {
+		return R.layout.activity_kkeyboard;
+	}
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_kkeyboard);
 		mainrl = (RelativeLayout) findViewById(R.id.kkb_mainrl);
 		medit = (EditText) findViewById(R.id.kedittext);
 		medit.addTextChangedListener(watcher);
 
 	}
+
 
 	private TextWatcher watcher = new TextWatcher() {
 

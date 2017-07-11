@@ -18,11 +18,16 @@ public class FireWorkActivity extends BaseActivity {
 	private FrameLayout bubbleLayout;
 
 	@Override
+	protected int setLayoutId() {
+		return R.layout.activity_fire_work;
+	}
+
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_fire_work);
 		onFireWork();
 	}
+
 
 	public void onFireWork() {
 		bubbleLayout = (FrameLayout) findViewById(R.id.animation_bubble);

@@ -16,9 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".KKeyboard">
+        <activity android:name=".KKeyboard"
+            android:theme="@style/KKeyboarTheme">
         </activity>
         <activity android:name=".FireWorkActivity">
+        </activity>
+        <activity android:name=".ChatActivity"
+                  android:windowSoftInputMode="adjustResize">
         </activity>
     </application>
 
