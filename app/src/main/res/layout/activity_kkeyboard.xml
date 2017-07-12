@@ -35,7 +35,7 @@
             android:hint="Input sth"
             android:imeActionLabel="abcde"
             android:imeOptions="actionUnspecified"
-            android:inputType="textMultiLine"
+            android:inputType="textVisiblePassword"
             android:textColor="@color/white"
             android:textColorHint="@color/white"/>
 

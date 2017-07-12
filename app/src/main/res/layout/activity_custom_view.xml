@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xresume.k.com.xresume.CustomViewActivity">
+
+    <xresume.k.com.xresume.views.LoadButton
+        android:id="@+id/image"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="commit"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backcolor="@color/bluegreen"/>
+</FrameLayout>

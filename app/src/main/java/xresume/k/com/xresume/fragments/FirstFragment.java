@@ -42,5 +42,4 @@ public class FirstFragment extends BaseFragment {
 		return exList;
 	}
 
-
 }
